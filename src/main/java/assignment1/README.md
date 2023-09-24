@@ -63,3 +63,12 @@ http://www.novaroma.org/via_romana/numbers.html.
 
 See Java class: `RomanNumeralConverter.java`
 and test class: `RomanNumeralConverterTest.java`
+
+# 3 - Give your thoughts on TDD
+Write your notes (in a readme file) regarding the TDD process, reflecting on the
+following questions.
+- What was positive and good about using TDD?
+- What was annoying or difficult?
+- What surprised you?
+- Did TDD help you write some tests you wouldn’t otherwise have thought of?
+
