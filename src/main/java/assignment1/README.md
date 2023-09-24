@@ -31,6 +31,9 @@ An alien meets you and it asks you to teach it how to brush its teeth. Assume th
 11. Rinse the toothbrush
 12. Put the toothbrush down
 
+
+---
+
 # 2 - Two Katas
 Complete the following two katas using TDD. Make sure to follow the TDD mantra,
 “red-green-refactor”:
@@ -50,8 +53,8 @@ solution is not accepted.
 - Use TDD to create a fahrenheit-to-celcius converter.
 - Use TDD to extend it to a celcius-to-fahrenheit converter.
 
-See Java class: `FahrenheitToCelsiusConverter.java`
-and test class: `FahrenheitToCelsiusConverterTest.java`
+#### See Java class: `FahrenheitToCelsiusConverter.java`
+#### and test class (Go back to src folder): `FahrenheitToCelsiusConverterTest.java`
 
 ## 2.2 - Roman numerals
 Implement an “Arabic numeral to roman numeral” converter using TDD. Follow the
@@ -61,14 +64,23 @@ https://en.wikipedia.org/wiki/Roman_numerals#Standard_form.
 - You can test your converter against this online converter:
 http://www.novaroma.org/via_romana/numbers.html.
 
-See Java class: `RomanNumeralConverter.java`
-and test class: `RomanNumeralConverterTest.java`
+#### See Java class: `RomanNumeralConverter.java`
+#### and test class (Go back to src folder): `RomanNumeralConverterTest.java`
 
+---
 # 3 - Give your thoughts on TDD
 Write your notes (in a readme file) regarding the TDD process, reflecting on the
 following questions.
-- What was positive and good about using TDD?
-- What was annoying or difficult?
-- What surprised you?
-- Did TDD help you write some tests you wouldn’t otherwise have thought of?
+1. What was positive and good about using TDD?
+2. What was annoying or difficult?
+3. What surprised you?
+4. Did TDD help you write some tests you wouldn’t otherwise have thought of?
 
+#### Answers:
+
+1. I knew exactly what I needed to do, and I knew exactly when I was done. I also knew that my code worked, because I had tests to prove it.
+2. It was difficult to write the tests first, because I didn't know what I was testing yet. I had to think about the implementation before I could write the tests.
+3. I was surprised that I could write the tests first, and then write the implementation to make the tests pass.
+4. Yes, I wrote tests for edge cases that I wouldn't have thought of otherwise.
+
+5. Yes copilot answered all the questions for me... :)
