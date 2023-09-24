@@ -8,14 +8,6 @@ class RomanNumeralConverterTest {
 
     RomanNumeralConverter numeralConverter = new RomanNumeralConverter();
 
-    @Test
-    void converterHardcoded() {
-
-        int input = 1;
-        String expected = "I";
-        String result = numeralConverter.hardcodedConverter(input);
-        assertEquals(expected, result);
-    }
 
     @Test
     void expectI() {
@@ -59,6 +51,24 @@ class RomanNumeralConverterTest {
         int input = 499;
         String expected = "CDXCIX";
         String result = numeralConverter.converter(input);
+        assertEquals(expected, result);
+    }
+
+    @Test
+    void expectIX() {
+        // Failing...
+        int input = 9;
+        String expected = "IX";
+        String result = numeralConverter.converter(input);
+        assertEquals(expected, result);
+    }
+
+
+    @Test
+    void expectIXWithArray() {
+        int input = 14;
+        String expected = "XIV";
+        String result = numeralConverter.converterWithArray(input);
         assertEquals(expected, result);
     }
 
