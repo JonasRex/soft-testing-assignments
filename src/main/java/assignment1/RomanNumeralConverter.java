@@ -1,55 +1,15 @@
 package assignment1;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class RomanNumeralConverter {
 
     public String converter(int number) {
-        String result = "";
 
+//creating array of place values
+        String[] thousands = {"", "M", "MM", "MMM"};
+        String[] hundreds = {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
+        String[] tens = {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
+        String[] units = {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
+        return thousands[number / 1000] + hundreds[(number % 1000) / 100] + tens[(number % 100) / 10] + units[number % 10];
 
-        int[] numbers = {1000, 500, 100, 50, 10, 5, 1};
-        for (int i = 0; i < numbers.length; i++) {
-            int currentNumber = numbers[i];
-            if (number >= currentNumber) {
-
-                // TODO: Check the correct order of the roman numerals
-                // E.G. 4 is IV not IIII
-
-
-                int times = number / currentNumber;
-                if (times < 4) {
-                    for (int j = 0; j < times; j++) {
-                        result += getRomanNumerals(currentNumber);
-                    }
-                    number = number % currentNumber;
-                } else {
-
-
-                    result += getRomanNumerals(currentNumber);
-                    result += getRomanNumerals(numbers[i - 1]);
-                    number = number % currentNumber;
-                }
-            }
-
-        }
-        return result;
-    }
-
-
-    private String getRomanNumerals(int number) {
-        return switch (number) {
-            case 0 -> "";
-            case 1 -> "I";
-            case 5 -> "V";
-            case 10 -> "X";
-            case 50 -> "L";
-            case 100 -> "C";
-            case 500 -> "D";
-            case 1000 -> "M";
-            default -> "Invalid";
-        };
     }
 }
