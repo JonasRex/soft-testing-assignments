@@ -1,6 +1,7 @@
-package assignment2;
+package assignment2.stringUtil;
 
 
+import assignment2.stringUtil.StringUtility;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

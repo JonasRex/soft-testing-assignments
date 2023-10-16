@@ -1,4 +1,4 @@
-package assignment2;
+package assignment2.stringUtil;
 
 class StringUtility {
     String reverseString(String string) {
